@@ -16,6 +16,7 @@ import { MainContent } from "./Main-content";
 function App() {
   const items = [
     {
+      image: "",
       name: "BELTED TULLE MIDI DRESS",
       price: "775",
       currency: "€",
@@ -29,6 +30,7 @@ function App() {
       id: 1
     },
     {
+      image: "",
       name: "TULLE CROP TOP",
       price: "450",
       currency: "€",
@@ -39,6 +41,7 @@ function App() {
       id: 2
     },
     {
+      image: "",
       name: "RUFFLE-TRIMMED MIDI DRESS",
       price: "610",
       currency: "€",
@@ -49,6 +52,7 @@ function App() {
       id: 3
     },
     {
+      image: "",
       name: "BOW-EMBELISHED MIDI DRESS",
       price: "1,160",
       currency: "€",
@@ -59,6 +63,7 @@ function App() {
       id: 4
     },
     {
+      image: "",
       name: "PINK TULLE-TRIMMED MIDI SKIRT",
       price: "650",
       currency: "€",
@@ -69,6 +74,7 @@ function App() {
       id: 5
     },
     {
+      image: "",
       name: "LEATHER PLATFORM ANKLE BOOTS",
       price: "1,480",
       currency: "€",
@@ -79,6 +85,7 @@ function App() {
       id: 6
     },
     {
+      image: "",
       name: "LASER-CUT LEATHER BROGUES",
       price: "610",
       currency: "€",
@@ -89,6 +96,7 @@ function App() {
       id: 7
     },
     {
+      image: "",
       name: "BLACK TULLE-TRIMMED MIDI SKIRT",
       price: "650",
       currency: "€",
@@ -99,6 +107,7 @@ function App() {
       id: 8
     },
     {
+      image: "",
       name: "DIAMOND-QUILTED COTTON TOP",
       price: "475",
       currency: "€",

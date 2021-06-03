@@ -31,9 +31,9 @@ export const ProductDetails = ({
               ))}
             </select>
             <input type="number" value="1" />
-            <a href="" className="btn">
+            <button /*onClick=(addItemToCart)*/ ClassName="btn">
               Add to Cart
-            </a>
+            </button>
             <h4>Product Details</h4>
             <br />
             <p>

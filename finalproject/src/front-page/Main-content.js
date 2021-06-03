@@ -24,9 +24,9 @@ export const MainContent = () => {
             雨が降っている。 ブラウンさんをお願いします。
           </p>
 
-          <a href="" className="btn">
+          <button className="btn">
             Discover SS21 Now
-          </a>
+          </button>
         </div>
 
         <div className="col-2">
@@ -72,9 +72,9 @@ export const MainContent = () => {
 
               <br />
 
-              <a href="" className="btn">
+              <button className="btn">
                 Contact Us
-              </a>
+              </button>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import React from "react"
 
 return (
     <div>
+      <Header />
         <div className="categories">
       <div className="mini-container">
         <div className="row row-2">
@@ -90,5 +91,6 @@ return (
         </div>
       </div>
     </div>
+    <Footer />
     </div>
 );
