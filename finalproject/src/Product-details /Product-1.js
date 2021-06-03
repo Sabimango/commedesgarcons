@@ -2,13 +2,9 @@ import "./index.css";
 import React, { useState } from "react";
 
 export const ProductDetails = ({
-  name,
-  price,
-  currency,
-  sizes,
-  details,
-  id,
-  setCart
+  
+  product,
+  addItemToCart
 }) => {
   return (
     <div>
@@ -23,14 +19,14 @@ export const ProductDetails = ({
           </div>
           <div className="col-2">
             <p>Home/Products</p>
-            <h1>{name}</h1>
+            <h1>{product.name}</h1>
             <h3>
-              {currency} {price}
+              {product.currency} {product.price}
             </h3>
             <br />
             <select>
               <option>Select Size</option>
-              {sizes.map(size => (
+              {product.sizes.map(size => (
                 <option>{size}</option>
               ))}
             </select>
