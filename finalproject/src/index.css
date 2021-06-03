@@ -1,25 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Helvetica', 'sans-serif';
+  font-family: "Helvetica", "sans-serif";
 }
 
 /*-----navbar----*/
@@ -29,13 +29,12 @@ body {
   padding: 20px;
 }
 
-nav{
+nav {
   flex: 1;
   text-align: right;
-
 }
 
-nav ul{
+nav ul {
   display: inline-block;
   list-style-type: none;
 }
@@ -45,16 +44,16 @@ nav ul li {
   margin-right: 20px;
 }
 
-a{
+a {
   text-decoration: none;
   color: #555;
 }
 
-p{
+p {
   color: #555;
 }
 
-.menu-icon{
+.menu-icon {
   width: 28px;
   margin-left: 20px;
   display: none;
@@ -75,34 +74,39 @@ p{
   justify-content: space-around;
 }
 
-.col-2{
+.col-2 {
   flex-basis: 50%;
   min-width: 300px;
 }
 
-.col-2 img{
+.col-2 img {
   max-width: 100%;
   padding: 50px 0;
 }
 
 .col-2 h1 {
-font-size: 50px;  
-line-height: 60px;
-margin: 25px 0;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
 }
 
 .btn {
   display: inline-block;
-  background: #000000;
-  color: #ffffff;
+  background: transparent;
+  border: 2px solid #000;
+  font-weight: bold;
+  color: #000;
   padding: 8px 30px;
   margin: 30px 0;
-  border-radius: 20px;
-  transition: background 0.5s;
+  border-radius: 4px;
+  transition: color 250ms ease-in-out,
+    background 350ms cubic-bezier(0.26, 0.11, 0.26, 1);
 }
 
 .btn:hover {
-background: #4d4d4d;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
 }
 
 header .row {
@@ -114,19 +118,17 @@ header .row {
 }
 
 .col-3 {
-  display: flex;
+  flex-basis: 30%;
   min-width: 250px;
   margin-bottom: 30px;
-
 }
 
 .col-3 img {
   width: 100%;
   padding: 10px;
-  
 }
 
-.mini-container{
+.mini-container {
   max-width: 1080px;
   margin: auto;
   padding-left: 25px;
@@ -136,32 +138,29 @@ header .row {
 .title {
   text-align: center;
   margin: 0 auto 80px;
-  position: relative; 
+  position: relative;
   line-height: 60px;
-
 }
 
-
-.col-3 p{
-font-size: 15px;
+.col-3 p {
+  font-size: 15px;
 }
 
-.col-4{
+.col-4 {
   flex-basis: 40%;
   min-width: 300px;
 }
 
-.col-4 img{
+.col-4 img {
   max-width: 100%;
   padding: 50px 0;
 }
 
-.col-4 p{
+.col-4 p {
   font-size: 15px;
-  
- }
+}
 
- .row-1 {
+.row-1 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -177,25 +176,27 @@ footer {
 }
 
 footer h3 {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.footer-col1, footer-col2, footer-col3, footer-col4 {
-min-width: 250px;
-margin-bottom: 20px;
+.footer-col1,
+footer-col2,
+footer-col3,
+footer-col4 {
+  min-width: 250px;
+  margin-bottom: 20px;
 }
 
-.footer-col1{
+.footer-col1 {
   flex-basis: 30%;
 }
 
-
-.footer-col3{
+.footer-col3 {
   padding: 50px;
-  
 }
 
-.footer-col3, .footer-col4 {
+.footer-col3,
+.footer-col4 {
   text-align: center;
 }
 
@@ -205,22 +206,21 @@ ul {
 /*---All Products---*/
 
 .row-2 {
- justify-content: space-between;
- margin: 100px auto 50px;
+  justify-content: space-between;
+  margin: 100px auto 50px;
 }
 
 select {
   border: 1px solid #000000;
-  padding: 5px; 
+  padding: 5px;
 }
 
-select:focus{
+select:focus {
   outline: none;
 }
 
 .page-btn {
   margin: 0 auto 80px;
-
 }
 
 .page-btn span {
@@ -241,18 +241,17 @@ select:focus{
 
 /*--Single product details--*/
 
-.single-product{
+.single-product {
   margin-top: 80px;
-
 }
 
-.single-product h3{
+.single-product h3 {
   margin: 20px;
   font-size: 22px;
   font-weight: bold;
 }
 
-.single-product input{
+.single-product input {
   display: block;
   padding: 5px;
   margin-top: 10px;
@@ -263,8 +262,8 @@ select:focus{
   margin-right: 10px;
   border: 1px solid #000000;
 }
-.single-product select{
-  border: 1px solid #000000; 
+.single-product select {
+  border: 1px solid #000000;
   display: block;
   width: 120px;
   height: 40px;
@@ -273,7 +272,7 @@ select:focus{
   margin-right: 10px;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 .product-det {
@@ -289,22 +288,22 @@ input:focus{
 }
 /*--media query---*/
 
-@media only screen and (max-width:768px) {
-  nav ul{
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
+@media only screen and (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
   }
 
   nav ul li {
-      display: block;
-      margin-right: 50px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  .menu-icon{
-      display: block;
-      cursor: pointer;
+  .menu-icon {
+    display: block;
+    cursor: pointer;
   }
 }

@@ -1,11 +1,12 @@
-import "./index.css";
-import React, { useState } from "react";
+import "../index.css";
 
-export const ProductDetails = ({
-  
-  product,
-  addItemToCart
-}) => {
+import React from "react";
+import { useMatch } from "@reach/router";
+
+export const ProductDetails = ({ items, addToCart }) => {
+  const match = useMatch("/products/:id");
+  const product = items.find(item => item.id === Number(match.id));
+
   return (
     <div>
       <div className="mini-container single-product">
@@ -13,7 +14,7 @@ export const ProductDetails = ({
           <div className="col-2">
             <img
               className="product-det"
-              src="../images/Product-1.jpg"
+              src={`../images/Product-${product.id}.jpg`}
               width="100%"
             />
           </div>
@@ -31,27 +32,23 @@ export const ProductDetails = ({
               ))}
             </select>
             <input type="number" value="1" />
-            <button /*onClick=(addItemToCart)*/ ClassName="btn">
+            <button onClick={() => addToCart(product)} className="btn">
               Add to Cart
             </button>
+
             <h4>Product Details</h4>
             <br />
-            <p>
-              The statement is yours to make with this sculptural tulle dress
-              from noir kei ninomiya. The design stays true to the label's dark
-              aesthetic in jet black, and it secures at the chest with a
-              belt-style harness before cascading into panels of layered tulle
-              of various lengths. We envision it creating a distinctive
-              silhouette when worn over slim-fitting black separates.
-            </p>
+            <p>{product.details}</p>
           </div>
         </row>
       </div>
+
       <div className="mini-container">
         <div className="row row-2">
           <h2>Related Products</h2>
         </div>
       </div>
+
       <div className="categories">
         <div className="mini-container">
           <div className="row">

@@ -1,13 +1,9 @@
-import "../index.css";
+import "./index.css";
 
 import React from "react";
 
-export const MainContent = () => {
-  const itemsToFeature = [
-    { name: "BELTED TULLE MIDI DRESS", price: "775", currency: "€" },
-    { name: "LEATHER PLATFORM ANKLE BOOTS", price: "1,480", currency: "€" },
-    { name: "TULLE-TRIMMED MIDI DRESS", price: "1,225", currency: "€" },
-  ];
+export const MainContent = ({ items, addToCart }) => {
+  const itemsToFeature = items.slice(0, 3);
 
   return (
     <div>
@@ -24,21 +20,21 @@ export const MainContent = () => {
             雨が降っている。 ブラウンさんをお願いします。
           </p>
 
-          <button className="btn">
-            Discover SS21 Now
-          </button>
+          <button className="btn">Discover SS21 Now</button>
         </div>
 
         <div className="col-2">
           <img alt="front" src="Images/front-image.jpg" />
         </div>
       </div>
-
       <div className="categories">
         <div className="mini-container">
           <h2 className="title">FEATURED ITEMS</h2>
           <div className="row">
-            <div className="col-3">
+            <div
+              style={{ display: "flex", flexBasis: "100%" }}
+              className="col-3"
+            >
               {itemsToFeature.map((item, index) => (
                 <div style={{ marginBottom: 16 }}>
                   <img
@@ -72,9 +68,7 @@ export const MainContent = () => {
 
               <br />
 
-              <button className="btn">
-                Contact Us
-              </button>
+              <button className="btn">Contact Us</button>
             </div>
           </div>
         </div>

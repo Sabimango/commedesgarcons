@@ -1,9 +1,9 @@
-import "../index.css";
-import React from "react";
+import "./index.css";
+
 import { Link } from "@reach/router";
+import React from "react";
 
-
-export const Header = () => (
+export const Header = ({setIsOpen}) => (
   <header>
     <div className="container">
       <div className="navbar">
@@ -20,7 +20,7 @@ export const Header = () => (
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/">Products</Link>
+              <Link to="/products">Products</Link>
             </li>
             <li>
               <Link to="/">About</Link>
@@ -29,11 +29,13 @@ export const Header = () => (
               <Link to="/">Contact</Link>
             </li>
             <li>
-            <Link to="/">Gallery</Link>
+              <Link to="/">Gallery</Link>
             </li>
           </ul>
         </nav>
-        <i className="fas fa-shopping-cart"></i>
+
+        <i onClick={() => setIsOpen(true)} className="fas fa-shopping-cart"></i>
+
         <img src="images/menu.png" className="menu-icon" />
       </div>
     </div>
