@@ -1,9 +1,10 @@
-import '../App.css';
+import "../App.css";
 import "../index.css";
-import {Header} from "Header"
-import {MainContent} from "Main-content"
-import {Footer} from "Footer"
-import React from "react"
+
+import { Footer } from "./Footer";
+import { Header } from "./Header";
+import { MainContent } from "./Main-content";
+import React from "react";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Header />
 
       <MainContent />
-      
+
       <Footer />
     </div>
   );
