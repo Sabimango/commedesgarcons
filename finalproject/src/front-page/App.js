@@ -1,5 +1,11 @@
 import "../App.css";
 import "../index.css";
+import { Router } from "@reach/router";
+import Home from "/";
+import Products from "/";
+import Contact from "/";
+import Gallery from "/";
+import About from "/";
 
 import React, { useState } from "react";
 
@@ -124,6 +130,14 @@ function App() {
       <MainContent />
 
       <Footer />
+
+      <Router>
+          <Home path="/" />
+          <Products path="Products" />
+          <About path="/" />
+          <Contact path="/" />
+          <Gallery path="/" />
+        </Router>
     </div>
   );
 }

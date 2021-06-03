@@ -1,6 +1,7 @@
 import "../index.css";
-
 import React from "react";
+import { Link } from "@reach/router";
+
 
 export const Header = () => (
   <header>
@@ -16,19 +17,19 @@ export const Header = () => (
         <nav>
           <ul id="MenuItems">
             <li>
-              <a href="index.html">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="products.html">Products</a>
+              <Link to="/">Products</Link>
             </li>
             <li>
-              <a href="">About</a>
+              <Link to="/">About</Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <Link to="/">Contact</Link>
             </li>
             <li>
-              <a href="">Gallery</a>
+            <Link to="/">Gallery</Link>
             </li>
           </ul>
         </nav>
